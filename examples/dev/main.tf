@@ -1,8 +1,8 @@
 module "cluster_automation" {
-  source                       = "git::https://github.com/weiwang118/automated-cluster-provisioner.git//module?ref=sandbox-test"
+  source                       = "git::https://github.com/Marinette101/automated-cluster-provisioner.git//module?ref=sandbox-test"
   project_id                   = "cloud-alchemists-sandbox"
-  source_of_truth_repo         = "github.com/weiwang118/automated-cluster-provisioner"
-  git_secret_id                = "wei-acp-test"
+  source_of_truth_repo         = "github.com/Marinette101/automated-cluster-provisioner"
+  git_secret_id                = "linghuanym-acp-test"
   project_id_secrets           = "cloud-alchemists-sandbox"
   edge_container_api_endpoint_override      = "https://staging-edgecontainer.sandbox.googleapis.com/"
   gke_hub_api_endpoint_override             = "https://staging-gkehub.sandbox.googleapis.com/"
@@ -15,7 +15,7 @@ module "cluster_automation" {
   environment                  = "acp-dev"
   cluster_creation_timeout     = "86400"
   cluster_creation_max_retries = "0"
-  notification_channel_email   = "weiww@google.com"
+  notification_channel_email   = "linghuanym@google.com"
   opt_in_build_messages        = true
   default_config_sync_version  = "1.18.3"
 }
